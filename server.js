@@ -9,7 +9,7 @@ const app = express()
 
 // Allow CORS for requests from the frontend
 app.use(cors({
-  origin: 'https://osarodev-addtocart.vercel.app/', // Specify the frontend URL here
+  origin: '*', // Specify the frontend URL here
   methods: ['GET', 'POST', 'PATCH', 'DELETE'], // Allow necessary HTTP methods
   credentials: true
 }));
